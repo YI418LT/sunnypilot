@@ -1481,3 +1481,29 @@ FW_VERSIONS = {
     ],
   },
 }
+  CAR.Super-ONE: {
+    (Ecu.eps, 0x18da30f1, None): [
+      b'39990-3BW-J030\x00\x00',
+    ],
+    (Ecu.gateway, 0x18daeff1, None): [
+      b'38897-3BW-J010\x00\x00',
+    ],
+    (Ecu.srs, 0x18da53f1, None): [
+      b'77959-3BV-J020\x00\x00',
+    ],
+    (Ecu.combinationMeter, 0x18da60f1, None): [
+      b'78108-3BW-J220\x00\x00',
+    ],
+    (Ecu.vsa, 0x18da28f1, None): [
+      b'57114-3BW-J040\x00\x00',
+    ],
+     (Ecu.shiftByWire, 0x18da0bf1, None): [
+      b'54008-3BV-J010\x00\x00',
+    ],
+    (Ecu.programmedFuelInjection, 0x18da10f1, None): [
+      b'37805-45A-J010\x00\x00',
+    ],
+    (Ecu.electricBrakeBooster, 0x18da2bf1, None): [
+      b'46114-3BV-J020\x00\x00',
+    ],
+  },
