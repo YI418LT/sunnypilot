@@ -4477,5 +4477,15 @@
       "2023"
     ],
     "package": "Adaptive Cruise Control (ACC) & Lane Assist"
+  },
+  "Honda Super-ONE 2026": {
+    "platform": "HONDA_SUPER_ONE",
+    "make": "Honda",
+    "brand": "honda",
+    "model": "Super-ONE",
+    "year": [
+      "2026"
+    ],
+    "package": "All"
   }
 }
