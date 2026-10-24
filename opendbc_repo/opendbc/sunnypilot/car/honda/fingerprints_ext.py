@@ -11,6 +11,11 @@ from opendbc.car.honda.values import CAR
 Ecu = CarParams.Ecu
 
 FW_VERSIONS_EXT = {
+  CAR.HONDA_SUPER_ONE: {
+    (Ecu.fwdRadar, 0x18dab0f1, None): [
+      b"8S102-3BW-J030\x00\x00",
+    ],
+  },
   CAR.HONDA_ACCORD: {
     (Ecu.eps, 0x18da30f1, None): [
       b'39990-TVA,A150\x00\x00',

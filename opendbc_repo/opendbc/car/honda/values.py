@@ -161,6 +161,8 @@ def radar_dbc_dict(pt_dict):
 # For modeling details, see p.198-200 in "The Science of Vehicle Dynamics (2014), M. Guiggiani"
 
 
+# Honda Super-ONE development specs: mass=1090 kg, wheelbase=2.520 m, steerRatio=18.64 (N-BOX common, pending validation)
+
 class CAR(Platforms):
   # Bosch Cars
   HONDA_NBOX_2G = HondaBoschPlatformConfig(
@@ -214,6 +216,13 @@ class CAR(Platforms):
     HONDA_CIVIC_BOSCH.specs,
     {Bus.pt: 'honda_bosch_radarless_generated'},
     flags=HondaFlags.BOSCH_RADARLESS
+  )
+  # Super-ONE development only: CAN compatibility and safety integration not yet validated
+  HONDA_SUPER_ONE = HondaBoschPlatformConfig(
+    [HondaCarDocs("Honda Super-ONE 2026", "All")],
+    CarSpecs(mass=1090, wheelbase=2.520, steerRatio=18.64),
+    {Bus.pt: "honda_bosch_radarless_generated"},
+    flags=HondaFlags.BOSCH_RADARLESS,
   )
   HONDA_CRV_5G = HondaBoschPlatformConfig(
     [HondaCarDocs("Honda CR-V 2017-22", min_steer_speed=15. * CV.MPH_TO_MS)],
